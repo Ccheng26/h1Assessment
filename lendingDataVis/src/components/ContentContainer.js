@@ -27,7 +27,6 @@ class _ContentContainer extends Component {
             <Grid container>
                 {/* <DefaultContainer />
                 <EmployeeCompanyDefaults />
-                
                 <OverallDefaults /> */}
                 <Grid item >
                 <EmployeeLoanPurpose companyData={this.state} />
