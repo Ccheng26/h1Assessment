@@ -25,12 +25,15 @@ class _ContentContainer extends Component {
     render() {
         return (
             <Grid container>
-                {/* <DefaultContainer />
-                <EmployeeCompanyDefaults />
+                {/* 
                 <OverallDefaults /> */}
                 <Grid item >
                 <EmployeeLoanPurpose companyData={this.state} />
                 </Grid>
+                <Grid item >
+                <DefaultContainer companyData={this.state} />
+                </Grid>
+                
             </Grid>
         )
     }

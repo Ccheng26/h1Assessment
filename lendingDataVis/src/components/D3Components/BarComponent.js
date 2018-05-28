@@ -5,10 +5,10 @@ export default class BarComponent extends Component {
     const { fill, height, width, x, y } = this.props;
     return (
       <rect
-        x={x}
-        y={y}
-        width={width}
-        height={height}
+        x={y}
+        y={x}
+        width={height}
+        height={width}
         fill={fill}
       />
     );

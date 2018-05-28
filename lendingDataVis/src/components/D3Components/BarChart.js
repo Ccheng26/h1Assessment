@@ -3,10 +3,7 @@ import BarComponent from './BarComponent';
 import { scaleBand, scaleLinear, scaleOrdinal, schemeCategory10 } from 'd3-scale';
 import { max } from 'd3-array';
 
-
-
 export default class BarChart extends Component {
-
   renderBars = () => {
     const { chartWidth, data, chartHeight } = this.props;
     // Scale used to get width and step
@@ -42,7 +39,6 @@ export default class BarChart extends Component {
 
     return (
       <div>
-        <h2>Vertical Bar Chart</h2>
         <svg width={chartWidth} height={chartHeight}>
           {this.renderBars()}
         </svg>
